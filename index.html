@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Tells browser that the page is written in English-->
+
+<head>
+  <meta charset="UTF-8"> <!--Just remember that it's written at the beginning on a HTML page-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tells the webpage to match the width to the device's screen width-->
+  <title>The Grand Haven Hotel</title>
+
+  <link rel="stylesheet" href="css/style.css"> <!--Connects to CSS-->
+</head>
+
+
+<body>
+
+  <header> <!--Represents the introductory/top portion of a webpage -->
+    <nav> <!--Tells the website that this section contains navigation links-->
+      <a href="index.html">The Grand Haven Hotel</a> <!--Connects "The Grand Haven Hotel" title to index.html-->
+      <ul>
+        <li>
+          <a href="index.html">Home</a><!--Connects "Home" to index.html-->
+        </li>
+
+        <li>
+          <a href="rooms.html">Rooms</a> <!--Connects "Rooms" to rooms.html-->
+        </li>
+
+        <li>
+          <a href="reservations.html">Reservations</a> <!--Connects "Reservations" to reservations.html-->
+        </li>
+
+      </ul>
+
+      <a href="reservations.html">Book now</a> <!--Connects "Book now" to reservations.html-->
+
+    </nav>
+
+  </header>
+
+  <main> <!--Tells the browser that this is the main content of the webpage.-->
+    <section class="hero">
+      <img src="images/hotel-hero.jpg" alt="The Grand Haven Hotel Lobby" width="300">
+      <h2>WELCOME TO THE GRAND HAVEN</h2>
+      <h1>Stay Somewhere Exceptional</h1> <!--Main heading-->
+      <p>Experience comfort, elegance, and personalized service at The Grand Haven Hotel.</p>
+
+      <a href="rooms.html">Explore Rooms</a> <!--Once you click "Explore Rooms", it goes to rooms.html-->
+
+      <a href="reservations.html">Book Your Stay</a>
+      <!--Once you click "Book Your Stay", it goes to reservations.html-->
+
+    </section>
+
+    <section class="booking">
+      <h2>Plan Your Stay</h2>
+
+      <form id="booking-form">
+        <label for="check-in">Check-in</label> <!--"for" connects the label-->
+        <input id="check-in" type="date"> <!--"id" identifies the input-->
+
+        <label for="check-out">Check-out</label>
+        <input id="check-out" type="date">
+
+        <label for="guests">Guests</label>
+        <select id="guests"> <!--creates dropdown-->
+          <option value="1">1 Guest</option> <!--"option" creates choices-->
+          <option value="2">2 Guests</option> <!--"value" stores the choice's value-->
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+        </select>
+
+        <button type="submit">Search Rooms</button>
+      </form>
+
+    </section>
+
+    <section class="featured-rooms">
+
+      <h2>Featured Rooms</h2>
+      <p>Discover comfortable and elegant accommodations designed for a relaxing stay.</p>
+
+      <article>
+        <img src="images/deluxe-king.jpg" alt="Deluxe king size room" width="300">
+        <h3>Deluxe King Room</h3>
+        <p>A spacious room featuring a king-size bed, modern furnishings, and a comfortable sitting area.</p>
+        <p>From $189 per night</p>
+        <a href="rooms.html">View Room</a>
+      </article>
+
+      <article>
+        <img src="images/ocean-view.jpg" alt="Ocean View Hotel Room" width="300">
+        <h3>Ocean View Room</h3>
+        <p>A spectacular room with a beautiful view of the sun covered ocean, with a spacious room.</p>
+        <p>From $300 per night.</p>
+        <a href="rooms.html">View Room</a>
+      </article>
+
+      <article>
+        <img src="images/suite-room.jpg" alt="Suite Hotel Room" width="300">
+        <h3>Suite Room</h3>
+        <p>A luxurious room with royal furniture and a cozy bed.</p>
+        <p>From $500 per night.</p>
+        <a href="rooms.html">View Room</a>
+      </article>
+
+    </section>
+
+    <section class="amenities">
+      <h2>Hotel Amenities</h2>
+      <p>Enjoy a range of thoughtful amenities designed to make your stay more comfortable and memorable.</p>
+
+      <div class="amenities-grid">
+
+        <article>
+          <h3>Free Wi-Fi</h3>
+          <p>Stay connected with complimentary high-speed Wi-Fi throughout the hotel.</p>
+        </article>
+
+        <article>
+          <h3>Swimming Pool</h3>
+          <p>Relax and unwind in our heated indoor swimming pool.</p>
+        </article>
+
+        <article>
+          <h3>Fitness Center</h3>
+          <p>Stay active with modern cardio and strength-training equipment.</p>
+        </article>
+
+        <article>
+          <h3>Restaurant & Bar</h3>
+          <p>Enjoy locally inspired dishes and handcrafted drinks at our on-site restaurant.</p>
+        </article>
+
+        <article>
+          <h3>Spa & Wellness</h3>
+          <p>Rejuvenate with relaxing treatments and wellness services.</p>
+        </article>
+
+        <article>
+          <h3>Free Parking</h3>
+          <p>Convenient complimentary parking is available for hotel guests.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about-preview">
+      <h2>Experience The Grand Haven</h2>
+      <p>The Grand Haven Hotel combines timeless elegance with modern comfort. Our dedicated team is committed to
+        providing every guest with a relaxing and memorable experience.</p>
+      <img src="images/hotel-building.jpg" alt="The Grand Haven Hotel Building" width="300">
+      <a href="about.html">Learn More About Us</a>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Experience The Grand Haven?</h2>
+      <p>Reserve your stay today and discover comfort, elegance, and exceptional hospitality.</p>
+      <a href="reservations.html">Book Your Stay</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <section>
+      <h2>The Grand Haven Hotel</h2>
+      <address>
+        123 Grand Avenue<br>
+        Haven City, HC 12345<br>
+        <a href="tel:+15551234567">(555) 123-4567</a><br>
+        <a href="mailto:info@grandhavenhotel.com">info@grandhavenhotel.com</a>
+      </address>
+
+    </section>
+
+    <section>
+      <h2>Quick links</h2>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="rooms.html">Rooms</a>
+        </li>
+
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+
+      </ul>
+    </section>
+
+    <p>&copy; 2026 The Grand Haven Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

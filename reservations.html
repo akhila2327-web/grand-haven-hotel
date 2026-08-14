@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grand Haven Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">The Grand Haven Hotel</a>
+      <ul>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="rooms.html">Rooms</a>
+        </li>
+
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+
+      </ul>
+
+      <a href="reservations.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="reservation-hero">
+      <h1>Make a Reservation</h1>
+      <p>Plan your stay at The Grand Haven Hotel and experience comfort,
+        elegance, and exceptional hospitality.</p>
+    </section>
+
+    <section class="reservations-form">
+      <h2>Reservations Details</h2>
+
+      <form id="reservation-form">
+
+        <article>
+
+          <h3>Stay Information</h3>
+
+          <label for="check-in">Check-in: </label>
+          <input id="check-in" type="date">
+
+          <br><br>
+
+          <label for="check-out">Check-out: </label>
+          <input id="check-out" type="date">
+
+          <br><br>
+
+          <label for="guests">Number of Guests: </label>
+
+          <select id="guests">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+          </select>
+
+          <br><br>
+
+          <label for="room">Room Type: </label>
+          <select id="room">
+            <option value="deluxe-king">Deluxe King Room</option>
+            <option value="ocean-view">Ocean View Room </option>
+            <option value="suite-room">Suite Room</option>
+          </select>
+
+        </article>
+
+        <article>
+
+          <h3>Guest Information</h3>
+
+          <label for="first-name">First Name: </label>
+          <input id="first-name" type="text" placeholder="Enter your first name">
+
+          <br><br>
+
+          <label for="last-name">Last Name: </label>
+          <input id="last-name" type="text" placeholder="Enter your last name">
+
+          <br><br>
+
+          <label for="email">Email: </label>
+          <input id="email" type="email" placeholder="Enter your email">
+
+          <br><br>
+
+
+
+          <label for="phone">Phone Number: </label>
+          <input id="phone" type="tel" placeholder="Enter your phone number">
+
+
+        </article>
+
+        <p id="total-price">Total: $0</p>
+
+
+
+        <button type="submit">Complete Reservation</button>
+
+
+
+
+
+      </form>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+
+    <section>
+      <h2>The Grand Haven Hotel</h2>
+      <address>
+        123 Grand Avenue<br>
+        Haven City, HC 12345<br>
+        <a href="tel:+15551234567">(555) 123-4567</a><br>
+        <a href="mailto:info@grandhavenhotel.com">info@grandhavenhotel.com</a>
+      </address>
+    </section>
+
+    <section>
+      <h2>Quick Links</h2>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="rooms.html">Rooms</a>
+        </li>
+
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+      </ul>
+    </section>
+
+
+    <p>&copy; 2026 The Grand Haven Hotel. All rights reserved.</p>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
